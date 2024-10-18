@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+  h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
 
+  h2,
+  h3,
+  h4,
+  p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
