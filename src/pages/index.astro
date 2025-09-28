@@ -152,7 +152,7 @@ import HeaderStyle from "../components/HeaderStyle.astro";
               year="2012-2022"
               header="Instruktør i ballet og Yoga "
               description="Undervisningsarbejde har lært mig at tage ansvar og arbejde med mennesker. Gennem denne type job har jeg opnået erfaring med at stå foran andre, tale og præsentere"
-              place="Italy, Hong-Kong, Danmark"
+              place="Italien, Hong-Kong, Danmark"
             />
           </div>
           <div class="col-start-1 col-span-1 row-start-3 row-span-1 pl-20
@@ -160,9 +160,9 @@ import HeaderStyle from "../components/HeaderStyle.astro";
 		  lg:col-start-2 lg:row-start-2 lg:pt-[510px] lg:pl-[230px]">
             <Card2
               year="2009-2012"
-              header="Balletdanser i balletteater"
+              header="Turnerende balletdanser"
               description="Jeg har lært at arbejde hårdt og kontinuerligt lære og øve mig. Herunder at udvikling og forbedring af mine færdigheder er vigtigt for at opnå succes"
-              place="Rundt om verden"
+              place="Rundt om i verden"
             />
           </div>
           <div class="col-start-3 col-span-1 row-start-3 row-span-1 pl-11
@@ -189,12 +189,13 @@ import HeaderStyle from "../components/HeaderStyle.astro";
               <figure class="flex flex-row max-w-[1200px]">
                 <section class="max-w-4xl mx-auto mt-16 mr-16 video-container" id="videoonhover" x-data>
                   <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
-                    <source src="video_helsecenter.mov" type="video/mp4" />
+                    <source src="helse_short_video.mp4" type="video/mp4" />
+                    <!-- <source src="helse_short_video.mov" type="video/mp4" /> -->
                   </video>
                 </section>
                 <section class="max-w-4xl mx-auto mt-16 pl-36px video-container relative" id="videoonhover" x-data>
                   <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
-                    <source src="video_hun.mov" type="video/mp4" />
+                    <source src="hun_short_video.mp4" type="video/mp4" />
                   </video>
 
                   <!-- Badge with text and link -->
@@ -230,12 +231,12 @@ import HeaderStyle from "../components/HeaderStyle.astro";
               <figure class="flex flex-row max-w-[1200px]">
                 <section class="max-w-4xl mx-auto mt-16 mr-16 video-container" id="videoonhover" x-data>
                   <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
-                    <source src="video_portfolio.mov" type="video/mp4" />
+                    <source src="portfolio_video_short.mov" type="video/mp4" />
                   </video>
                 </section>
                 <section class="max-w-4xl mx-auto mt-16 pl-36px video-container" id="videoonhover" x-data>
                   <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
-                    <source src="video_karrusel.mov" type="video/mp4" />
+                    <source src="carrussel_short_video.mov" type="video/mp4" />
                   </video>
                 </section>
               </figure>
