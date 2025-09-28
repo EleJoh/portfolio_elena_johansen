@@ -4,29 +4,37 @@ import Card from "../components/Card.astro";
 import Card2 from "../components/Card2.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
-// import { Image } from "astro:assets";
-// import thumbsup from "../assets/images/thumbsup.png";
-// import "../styles/tobii.min.css"; <!-- sm:bg-contain sm:h-[60vh] -->
+import HeaderStyle from "../components/HeaderStyle.astro";
 ---
 
 <MainLayout title="Titel">
+  <div class="progress-bar h-2 fixed w-full bg-gradient-to-r from-beigeColor to-blueDarkColor left-0 origin-top-left top-0 right-0"></div>
+
   <article class="mx-auto max-w-screen-2xl">
-    <section class="grid grid-cols-5 grid-rows-4">
-      <img src="background_om_mig_1.webp" alt="" class="col-start-1 col-span-5 row-start-1 row-span-4 mx-auto object-cover aspect-[16/9] h-full" />
-      <h1 class="text-h1_s md:text-h1_m lg:text-h1 col-start-1 col-span-1 row-start-1 row-span-2 mx-auto pl-5">
-        El<span class="text-blueDarkColor">e</span>na <br />
+    <section class="grid grid-cols-5 grid-rows-4 bg-blueColor">
+      <img src="lines_2.png" alt="" class="col-start-1 col-span-5 row-start-1 row-span-4 mx-auto object-cover h-auto w-auto max-w-full max-h-full" />
+      <h1 class="text-h1_s md:text-h1_m lg:text-h1 col-start-1 col-span-5 row-start-1 row-span-2 pl-5 ml-0">
+        <span class="letter">E</span><span class="letter">l</span><span class="letter text-blueDarkColor">e</span><span class="letter">n</span><span class="letter">a</span>
       </h1>
-      <h1 class="text-h1_s md:text-h1_m lg:text-h1 col-start-1 col-span-1 row-start-1 row-span-2 mx-auto p-5 pt-20 md:pt-32 lg:pt-56">
-        Johans<span class="text-blueDarkColor">e</span>n
+      <h1 class="text-h1_s md:text-h1_m lg:text-h1 col-start-1 col-span-5 row-start-1 row-span-2 p-5 pt-20 md:pt-32 lg:pt-56 pl-5 ml-0">
+        <span class="letter">J</span><span class="letter">o</span><span class="letter">h</span><span class="letter">a</span><span class="letter">n</span><span class="letter">s</span><span class="letter text-blueDarkColor">e</span><span class="letter"
+          >n</span
+        >
       </h1>
       <h2 class="text-h2_s md:text-h2_m lg:text-h2 col-start-1 col-span-3 row-start-2 row-span-3 pl-5 pt-20 md:pt-32 lg:pt-56">UX/UI DESIGNER</h2>
-      <div class="hidden md:flex items-center pl-10 col-start-1 col-span-3 row-start-2 row-span-2 pt-64">
+      <div class="hidden md:flex items-center pl-10 col-start-1 col-span-3 row-start-2 row-span-2 pt-56">
         <div class="text-menu_s md:text-menu_m lg:text-menu vertical-text pr-5">S<br />C<br />R<br />O<br />L<br />L</div>
-        <div class="line w-1 h-44 bg-blueDarkColor"></div>
+        <div class="line w-1 h-44 bg-blueDarkColor relative overflow-hidden">
+          <div class="scroll-effect absolute top-0 left-0 w-full h-full bg-blueDarkColor"></div>
+        </div>
       </div>
+
       <div class="col-start-3 col-span-1 row-start-4 row-span-1 md:pt-5">
         <img src="/ikon.png" alt="" class="aspect-square w-full h-auto" />
-        <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">OM MIG</h3>
+        <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">
+          <span class="letter">O</span><span class="letter">M</span>
+          <span class="letter">M</span><span class="letter">I</span><span class="letter">G</span>
+        </h3>
       </div>
     </section>
 
@@ -50,7 +58,9 @@ import Link from "../components/Link.astro";
       <img src="background_evner_4.webp" alt="" class="col-start-1 col-span-5 row-start-1 row-span-2 mx-auto" />
       <div class="col-start-3 col-span-1 row-start-2 row-span-1">
         <img src="/evner.png" alt="" class="aspect-square w-full h-auto max-w-48 md:max-w-56 lg:max-w-xs" />
-        <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">EVNER</h3>
+        <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">
+          <span class="letter">E</span><span class="letter">V</span><span class="letter">N</span><span class="letter">E</span><span class="letter">R</span>
+        </h3>
       </div>
     </section>
 
@@ -82,56 +92,62 @@ import Link from "../components/Link.astro";
       <div>
         <h4 class="text-h4_s md:text-h4_m lg:text-h4 pb-5 pt-20 md:pt-0">Værktøjer</h4>
         <div class="flex">
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
+          <img src="/tools/ai.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20 mr-3" />
+          <img src="/tools/figma.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20 mr-3" />
+          <img src="/tools/ae.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20 mr-3" />
+          <img src="/tools/ps.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20 mr-3" />
+          <img src="/tools/pr.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20 mr-3" />
         </div>
 
         <h4 class="text-h4_s md:text-h4_m lg:text-h4 pt-5 pb-3 md:pt-10 md:pb-5">Tekniske sprog</h4>
         <div class="flex">
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
+          <img src="/tools/html3.png" alt="" class="max-w-60" />
+          <!-- <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
+          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" /> -->
         </div>
 
         <h4 class="text-h4_s md:text-h4_m lg:text-h4 pt-5 pb-3 md:pt-10 md:pb-5">Rammeværker</h4>
         <div class="flex">
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
-          <img src="/icon.png" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
+          <img src="/tools/astro.svg" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
+          <img src="/tools/alpine.png" alt="" class="max-h-12 md:max-w-20 lg:max-w-20" />
+          <img src="/tools/alpine.svg" alt="" class="max-w-16 md:max-w-20 lg:max-w-20" />
+          <img src="/tools/animista.png" alt="" class="max-w-32 md:max-w-60 lg:max-w-60 mb-3" />
         </div>
       </div>
     </section>
 
-    <section class="grid grid-cols-5 grid-rows-6 bg-beigeColor">
-      <img src="rejse_projekter.webp" alt="" class="col-start-1 col-span-5 row-start-1 row-span-6 mx-auto" />
-      <div class="col-start-3 col-span-1 row-start-2 row-span-1">
+    <section class="grid grid-cols-5 grid-rows-5 bg-beigeColor">
+      <img src="rejse_projekter_2.png" alt="" class="col-start-1 col-span-5 row-start-1 row-span-6 mx-auto" />
+      <div class="col-start-3 col-span-1 row-start-1 row-span-1 pt-10 lg:pt-20">
         <img src="/rejse.png" alt="" class="aspect-square w-full h-auto max-w-48 md:max-w-56 lg:max-w-xs" />
-        <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">REJSE</h3>
+        <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">
+          <span class="letter">R</span><span class="letter">E</span><span class="letter">J</span><span class="letter">S</span><span class="letter">E</span>
+        </h3>
       </div>
-      <div class="col-start-3 col-span-1 row-start-6 row-span-1">
+      <div class="col-start-3 col-span-1 row-start-5 row-span-1">
         <img src="/projekter.png" alt="" class="aspect-square w-full h-auto max-w-48 md:max-w-56 lg:max-w-xs" />
-        <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">PROJEKTER</h3>
+        <h3 class="text-h5_s md:text-h3_m lg:text-h3 text-center">
+          <span class="letter">P</span><span class="letter">R</span><span class="letter">O</span><span class="letter">J</span><span class="letter">E</span><span class="letter">K</span><span class="letter">T</span><span class="letter">E</span><span
+            class="letter">R</span
+          >
+        </h3>
       </div>
 
       <div class="col-start-1 col-span-5 row-start-2 row-span-6">
-        <div class="grid grid-cols-4 col-span-4 grid-rows-2 row-span-2
-		md:grid-rows-1 md:pt-[100px] md:pl-[70px]
+        <div class="grid grid-cols-4 col-span-4 grid-rows-1 row-span-2
+		md:grid-rows-1 md:pt-[0] md:pl-[70px]
 		lg:pt-0 lg:pl-[70px]">
-          <div class="col-start-1 col-span-1 row-start-2 row-span-1 pl-2 lg:pt-32">
+          <div class="col-start-1 col-span-1 row-start-2 row-span-1 pl-2 lg:pt-0">
             <Card
               year="2023-present"
               header="MMD studerende KEA"
-              description="Skiftet i min karriere er drevet af min passion for design og skabelsen af visuel fortælling. Jeg er overbevist om, at min erfaring fra min tidligere profession er værdifuld og styrker mig i min nye passion"
+              description="Jeg valgte at studere multimediedesign, drevet af en stærk passion for design og visuel fortælling. Min tidligere erhvervserfaring giver mig et solidt fundament og et unikt perspektiv, som styrker mit arbejde og engagement i den kreative verden."
               place="Danmark"
             />
           </div>
           <div class="col-start-2 col-span-1 row-start-2 row-span-1 pl-20
 		  md:col-start-2 md:row-start-2 md:pt-[180px] md:pl-[0px]
-		  lg:col-start-1 lg:pt-96 lg:pl-[300px]">
+		  lg:col-start-1 lg:pt-64 lg:pl-[300px]">
             <Card
               year="2012-2022"
               header="Instruktør i ballet og Yoga "
@@ -141,7 +157,7 @@ import Link from "../components/Link.astro";
           </div>
           <div class="col-start-1 col-span-1 row-start-3 row-span-1 pl-20
 		md:col-start-2 md:row-start-2 md:pt-[370px] md:pl-[200px]
-		  lg:col-start-2 lg:row-start-2 lg:pt-[650px] lg:pl-[230px]">
+		  lg:col-start-2 lg:row-start-2 lg:pt-[510px] lg:pl-[230px]">
             <Card2
               year="2009-2012"
               header="Balletdanser i balletteater"
@@ -151,7 +167,7 @@ import Link from "../components/Link.astro";
           </div>
           <div class="col-start-3 col-span-1 row-start-3 row-span-1 pl-11
 		  md:col-start-3 md:row-start-2 md:pt-[570px] md:pl-[150px]
-		  lg:col-start-3 lg:row-start-2 lg:pt-[910px] lg:pl-[130px]">
+		  lg:col-start-3 lg:row-start-2 lg:pt-[770px] lg:pl-[130px]">
             <Card2
               header="Professionel balletskole 2001-2009 /"
               header2="University of Culture and Art 2009-2015"
@@ -164,12 +180,240 @@ import Link from "../components/Link.astro";
     </section>
 
     <section class="bg-beigeColor">
-      <p>ljyfluyfuyfluyfuyfukyfkuyfuyfdluyfduyfdluyfuyfuyf</p>
+      <div class="overflow-clip">
+        <section id="horisontalscrollsection" class="h-[400vw] pl-10">
+          <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[10vh]">
+            <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+              <h3 class="text-h3_s md:text-h3_m lg:text-h3">01 Design af udvalgte websites i samarbejde med kunder.</h3>
+              <p class="pt-4 text-p_s md:text-p_m lg:text-p max-w-xl">Besøg af virksomhed og forståelse i deres værdier og USPs, redesign af hjemmeside, test af nye digitale løsninger.</p>
+              <figure class="flex flex-row max-w-[1200px]">
+                <section class="max-w-4xl mx-auto mt-16 mr-16 video-container" id="videoonhover" x-data>
+                  <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
+                    <source src="video_helsecenter.mov" type="video/mp4" />
+                  </video>
+                </section>
+                <section class="max-w-4xl mx-auto mt-16 pl-36px video-container relative" id="videoonhover" x-data>
+                  <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
+                    <source src="video_hun.mov" type="video/mp4" />
+                  </video>
+
+                  <!-- Badge with text and link -->
+                  <div class="absolute top-0 left-0 p-4 bg-beigeColor border-2 border-beigeColor text-black text-sm font-semibold shadow-lg">
+                    <p class="text-p_mini">Dette design er blevet</p>
+                    <p class="text-p_mini">implementeret på</p>
+                    <p class="text-p_mini">
+                      <a href="https://www.hansulriknielsen.dk/" class="underline text-blueDarkColor" target="_blank"> virksomhedens hjemmeside </a>.
+                    </p>
+                  </div>
+                </section>
+              </figure>
+            </li>
+
+            <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+              <h3 class="text-h3_s md:text-h3_m lg:text-h3">02 Arbejde med illustrationer.</h3>
+              <p class="pt-4 text-p_s md:text-p_m lg:text-p max-w-xl">Ideudviklingsfase og skabelse af skitser for et spil. Design af vektorgrafik i Illustrator og implementering i HTML CSS og JS</p>
+              <figure class="flex flex-row max-w-[1200px]">
+                <section class="max-w-4xl mx-auto mt-16 mr-16 video-container" id="videoonhover" x-data>
+                  <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
+                    <source src="video_spil.mov" type="video/mp4" />
+                  </video>
+                </section>
+                <section class="max-w-4xl mx-auto mt-16 mr-16 picture-container" id="img_size">
+                  <img src="spil.png" alt="img" />
+                </section>
+              </figure>
+            </li>
+
+            <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+              <h3 class="text-h3_s md:text-h3_m lg:text-h3">03 Studieprojekter.</h3>
+              <p class="pt-4 text-p_s md:text-p_m lg:text-p max-w-xl">Opgaver bestod af research, LoFi og HiFi designløsning, test af prototype og udvikling af webløsning i VS Code.</p>
+              <figure class="flex flex-row max-w-[1200px]">
+                <section class="max-w-4xl mx-auto mt-16 mr-16 video-container" id="videoonhover" x-data>
+                  <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
+                    <source src="video_portfolio.mov" type="video/mp4" />
+                  </video>
+                </section>
+                <section class="max-w-4xl mx-auto mt-16 pl-36px video-container" id="videoonhover" x-data>
+                  <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
+                    <source src="video_karrusel.mov" type="video/mp4" />
+                  </video>
+                </section>
+              </figure>
+            </li>
+
+            <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+              <h3 class="text-h3_s md:text-h3_m lg:text-h3">04 Arbejde med grafik.</h3>
+              <p class="pt-4 text-p_s md:text-p_m lg:text-p max-w-xl">Research og tilpasning af stil til ikoner og animerede grafik til et website.</p>
+              <figure class="flex flex-row max-w-[1200px]">
+                <section class="max-w-4xl mx-auto mt-16 mr-16 video-container" id="videoonhover" x-data>
+                  <video width="1280" height="960" autoplay muted loop x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()" class="cursor-handcursor">
+                    <source src="video_itmv.mov" type="video/mp4" class="" />
+                  </video>
+                </section>
+                <section class="max-w-4xl mx-auto mt-16 mr-16 picture-container" id="img_size">
+                  <img src="icons_dag.png" alt="img" />
+                </section>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </div>
     </section>
+    <!-- ____________________-- -->
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 grid-rows-3 bg-beigeColor relative min-h-screen">
+      <!-- Background Image -->
+      <img src="sidst_5.png" alt="" class="col-start-1 col-span-full row-start-1 row-span-full object-cover w-full h-full absolute inset-0 z-0" />
+      <!-- Mirrored image (phone) -->
+      <div class="col-start-1 md:col-start-2 row-start-3 row-span-1 z-10 flex items-start justify-center md:pr-10 pt-10"><img src="phone.png" alt="Phone Image" class="transform -scale-x-100 w-24 sm:w-28 md:w-36 lg:w-auto" /></div>
+      <!-- “Let's” text -->
+      <h1 class="col-start-1 sm:col-start-2 md:col-start-3 col-span-1 md:col-span-3 row-start-2 row-span-2 text-right z-10 pr-4 sm:pr-8 md:pr-10 lg:pr-40 text-6xl md:text-6xl lg:text-[134px] leading-tight pt-32">
+        <span class="letter">L</span><span class="letter text-beigeColor">e</span><span class="letter">t</span><span class="letter">’</span><span class="letter">s</span>
+      </h1>
+      <!-- “connect” text -->
+      <h1 class="col-start-1 sm:col-start-2 md:col-start-3 md:pt-48 col-span-1 md:col-span-3 row-start-2 row-span-3 text-right pt-48 lg:pt-56 z-10 pr-4 sm:pr-8 md:pr-10 lg:pr-40 text-6xl sm:text-4xl md:text-6xl lg:text-[134px] leading-tight">
+        <span class="letter">c</span><span class="letter text-beigeColor">o</span><span class="letter">n</span><span class="letter">n</span><span class="letter">e</span><span class="letter">c</span><span class="letter">t</span>
+      </h1>
+      <!-- Links -->
+      <div class="col-start-1 sm:col-start-2 md:col-start-4 col-span-1 md:col-span-2 row-start-3 row-span-1 flex flex-col items-end justify-end z-10 space-y-3 sm:space-y-4 md:space-y-6 pr-4 sm:pr-8 md:pr-10 lg:pr-40 pb-20 pt-10">
+        <a
+          href="https://www.linkedin.com/in/elena-johansen-ab7707115/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-right text-sm sm:text-lg md:text-2xl lg:text-3xl text-blueDarkColor underline underline-offset-2 decoration-[1px] hover:text-blue-950 transition"
+        >
+          LinkedIn Profile
+        </a>
+        <a href="mailto:elejohansen@gmail.com" class="text-right text-sm sm:text-lg md:text-2xl lg:text-3xl text-blueDarkColor underline underline-offset-2 decoration-[1px] hover:text-blue-950 transition"> elejohansen@gmail.com </a>
+      </div>
+    </section>
+
+    <div id="scrollToTop" class="hidden fixed bottom-5 right-5 bg-blueDarkColor text-white p-3 rounded-full shadow-lg cursor-pointer z-20">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
+      </svg>
+    </div>
   </article>
 
-  <!-- <script is:inline src="/tobii.min.js"></script>
-<script defer>
-  const tobii = new Tobii();
-</script> -->
+  <style>
+    @keyframes scrollLineEffect {
+      0% {
+        transform: translateY(-100%);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    }
+
+    .line {
+      position: relative;
+      overflow: hidden;
+    }
+    .scroll-effect {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(228, 228, 224, 1);
+      animation: scrollLineEffect 3s linear infinite;
+    }
+
+    .letter {
+      will-change: transform;
+      cursor: default;
+
+      display: inline-block;
+      transition: transform 0.2s ease;
+      letter-spacing: 0;
+    }
+
+    .letter:hover {
+      transform: scaleX(0.8) scaleY(1.2);
+    }
+
+    #horisontalliste > li {
+      width: 100vw; /* Same width for all items */
+      flex: 0 0 auto; /* Prevents flex shrinking/growing */
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: space-between;
+      height: 500px; /* Set a fixed height */
+    }
+
+    /* Set consistent video sizes */
+    #horisontalliste video {
+      width: 600px; /* Uniform width */
+      height: 300px; /* Uniform height */
+      object-fit: cover; /* Ensures proper scaling */
+    }
+
+    #img_size img {
+      width: 600px; /* Match video width */
+      height: 300px; /* Match video height */
+      object-fit: cover; /* Ensures proper scaling */
+    }
+
+    /* Adjust figure to align videos properly */
+    figure {
+      display: flex;
+      gap: 1rem; /* Space between videos */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-container {
+      transition:
+        transform 0.3s ease,
+        outline 0.3s ease; /* Smooth scaling and outline transition */
+    }
+
+    .video-container:hover {
+      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8); /* Glowing effect */
+      transform: scale(1.05); /* Slightly increases size */
+      cursor: pointer; /* Indicates interactivity */
+    }
+
+    /* Picture hover effect */
+    .picture-container:hover {
+      outline: none; /* No outline for images */
+      cursor: default; /* Default cursor for static pictures */
+    }
+  </style>
+  <script>
+    import { animate, stagger, inView, scroll, timeline } from "motion";
+    scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+    scroll(
+      animate("#horisontalliste", {
+        transform: ["none", "translateX(-400vw)"],
+      }),
+      { target: document.querySelector("#horisontalscrollsection") }
+    );
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const scrollToTopButton = document.getElementById("scrollToTop");
+
+      // Show/hide the button on scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+          scrollToTopButton.classList.remove("hidden");
+        } else {
+          scrollToTopButton.classList.add("hidden");
+        }
+      });
+
+      // Scroll to top when the button is clicked
+      scrollToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
 </MainLayout>

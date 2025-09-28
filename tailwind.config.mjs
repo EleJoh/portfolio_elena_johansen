@@ -3,10 +3,22 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      cursor: {
+        handcursor: "url(/play.webp) 25 25, pointer",
+      },
+
       colors: {
         blueColor: "rgba(157, 196, 198, 1)",
         blueDarkColor: "rgba(61, 151, 156, 1)",
         beigeColor: "rgba(228, 228, 224, 1)",
+        hunColor: "rgba(236, 227, 217, 1)",
+        cardColor: "rgba(5, 21, 22, 1)",
+        h1: "rgba(5, 21, 22, 1)",
+        h2: "rgba(5, 21, 22, 1)",
+        h3: "rgba(14, 52, 55, 1)",
+        h4: "rgba(14, 52, 55, 1)",
+        h5: "rgba(14, 52, 55, 1)",
+        p: "rgba(5, 21, 22, 1)",
       },
       fontSize: {
         h1: "14rem",

@@ -1,5 +1,19 @@
 ---
+const { variant = "primary", size = "large" } = Astro.props;
+
+const variantClasses = {
+  primary: "bg-blue-100 font-bold text-white border-2 border-blue-900 hover:bg-transparent hover:text-blue-900 hover:border-blue-900",
+  secondary: "text-base font-bold bg-transparent text-bordeaux-700 border-solid border-2 border-bordeaux-700 hover:bg-bordeaux-700 hover:text-brown-50 hover:border-bordeaux-700",
+};
+
+const sizeClasses = {
+  large: "py-24 px-64 text-base rounded-full",
+  small: "py-12 px-20 text-base_xs",
+};
 ---
+
 <div>
-    <button class="border-2 border-black"><slot /></button>
+  <button class:list={["rounded-lg transition-all duration-300", variantClasses[variant], sizeClasses[size]]}>
+    <slot />
+  </button>
 </div>
