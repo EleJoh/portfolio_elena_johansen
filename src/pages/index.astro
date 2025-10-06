@@ -40,17 +40,24 @@ import HeaderStyle from "../components/HeaderStyle.astro";
 
     <section class="md:grid grid-cols-10 grid-rows-4 bg-blueColor mx-auto p-10 md:p-0">
       <div class="col-start-2 col-span-3 row-start-1 row-span-2 lg:pt-10 lg:pr-20">
-        <p class="text-h3_s md:text-h3_m lg:text-h3">Hej!</p>
-        <p class="text-p_s md:text-p_m lg:text-p pt-5">Jeg er Elena Johansen, og jeg er passioneret omkring design og at skabe visuelle fortællinger og interaktioner med brugere, hvor grafik og animationer spiller en stor rolle.</p>
-        <p class="text-p_s md:text-p_m lg:text-p pt-5">Jeg er nysgerrig på at videreudvikle mine design- og programmeringskompetencer, og se dem anvendt i professionelle digitale løsninger.</p>
+        <p class="text-h3_s md:text-h3_m lg:text-h3"></p>
+        <p class="text-p_s md:text-p_m lg:text-p pt-5">
+          Hele mit liv har jeg været i tæt forbindelse med kunst og æstetik. Jeg blev professionel balletdanser som 18-årig med den højeste uddannelse inden for klassisk ballet. Min profession har bl.a. givet mig bred viden om kunst og visuel
+          kommunikation, og den har lært mig at arbejde hårdt for at opnå ønskede resultater uanset udfordringer.
+        </p>
+        <p class="text-p_s md:text-p_m lg:text-p pt-5">
+          Gennem mit job og delvist pga. ferie har jeg besøgt mere end 40 lande. Derudover har jeg boet og arbejdet i Italien i 2 år og Hong Kong i 5 år. Den udenlandske erfaring har givet mig forståelse for andre kulturer og mulighed for at lære
+          andre folk at kende.
+        </p>
       </div>
       <div class="col-start-5 col-span-2 row-start-2 row-span-3 pt-10 pb-10">
         <img src="/om_mig_color1.png" alt="" class="mx-auto max-w-48 md:max-w-56 lg:max-w-xs" />
       </div>
-      <div class="col-start-7 col-span-3 row-start-3 row-span-2 md:pt-28 md:pl-20">
-        <p class="text-p_s md:text-p_m lg:text-p">Jeg er ambitiøs, kreativ og tilstræber altid at lave mit næste projekt bedre end det forrige.</p>
-        <p class="text-p_s md:text-p_m lg:text-p pt-5">Min passion ligger i at skabe brugervenlige og intuitive løsninger, der anerkendes af brugerne. Jeg tager ansvar for mit arbejde og har et godt øje for både æstetik og funktionalitet.</p>
-        <p class="text-p_s md:text-p_m lg:text-p pt-5">Jeg er arbejdsom, nysgerrig på udvikling og altid klar til nye, kreative udfordringer!</p>
+      <div class="col-start-7 col-span-3 row-start-3 row-span-2 md:pl-20">
+        <p class="text-p_s md:text-p_m lg:text-p">Min kreative baggrund og internationale erfaring har ledt mig videre til en ny passion: design.</p>
+        <p class="text-p_s md:text-p_m lg:text-p">I dag brænder jeg for at skabe visuelle fortællinger og interaktioner med brugere, hvor grafik og animationer spiller en central rolle.</p>
+        <p class="text-p_s md:text-p_m lg:text-p pt-5">Jeg er nysgerrig på at videreudvikle mine design- og programmeringskompetencer og se dem anvendt i professionelle digitale løsninger.</p>
+        <p class="text-p_s md:text-p_m lg:text-p pt-5">Jeg er en kreativ og arbejdsom person, der tager ansvar for mit arbejde, er nysgerrig på udvikling og altid klar til nye, spændende udfordringer.</p>
       </div>
     </section>
 
@@ -116,14 +123,16 @@ import HeaderStyle from "../components/HeaderStyle.astro";
       </div>
     </section>
 
-    <section class="grid grid-cols-5 grid-rows-5 bg-beigeColor">
-      <img src="rejse_projekter_2.png" alt="" class="col-start-1 col-span-5 row-start-1 row-span-6 mx-auto" />
-      <div class="col-start-3 col-span-1 row-start-1 row-span-1 pt-10 lg:pt-20">
+    <section class="grid grid-cols-5 grid-rows-1 bg-beigeColor">
+      <img src="projekter_fill_2.png" alt="" class="col-start-1 col-span-5 row-start-1 row-span-6 mx-auto" />
+
+      <!-- <div class="col-start-3 col-span-1 row-start-1 row-span-1 pt-10 lg:pt-20">
         <img src="/rejse.png" alt="" class="aspect-square w-full h-auto max-w-48 md:max-w-56 lg:max-w-xs" />
         <h3 class="text-h3_s md:text-h3_m lg:text-h3 text-center">
           <span class="letter">R</span><span class="letter">E</span><span class="letter">J</span><span class="letter">S</span><span class="letter">E</span>
         </h3>
-      </div>
+      </div> -->
+
       <div class="col-start-3 col-span-1 row-start-5 row-span-1">
         <img src="/projekter.png" alt="" class="aspect-square w-full h-auto max-w-48 md:max-w-56 lg:max-w-xs" />
         <h3 class="text-h5_s md:text-h3_m lg:text-h3 text-center">
@@ -133,7 +142,7 @@ import HeaderStyle from "../components/HeaderStyle.astro";
         </h3>
       </div>
 
-      <div class="col-start-1 col-span-5 row-start-2 row-span-6">
+      <!-- <div class="col-start-1 col-span-5 row-start-2 row-span-6">
         <div class="grid grid-cols-4 col-span-4 grid-rows-1 row-span-2
 		md:grid-rows-1 md:pt-[0] md:pl-[70px]
 		lg:pt-0 lg:pl-[70px]">
@@ -158,12 +167,7 @@ import HeaderStyle from "../components/HeaderStyle.astro";
           <div class="col-start-1 col-span-1 row-start-3 row-span-1 pl-20
 		md:col-start-2 md:row-start-2 md:pt-[370px] md:pl-[200px]
 		  lg:col-start-2 lg:row-start-2 lg:pt-[510px] lg:pl-[230px]">
-            <Card2
-              year="2009-2012"
-              header="Turnerende balletdanser"
-              description="Jeg har lært at arbejde hårdt og kontinuerligt lære og øve mig. Herunder at udvikling og forbedring af mine færdigheder er vigtigt for at opnå succes"
-              place="Rundt om i verden"
-            />
+            <Card2 year="2009-2012" header="Turnerende balletdanser" description="Jeg har lært at arbejde hårdt og kontinuerligt lære og øve mig. Herunder at forbedring af mine færdigheder er vigtigt for at opnå succes" place="Rundt om i verden" />
           </div>
           <div class="col-start-3 col-span-1 row-start-3 row-span-1 pl-11
 		  md:col-start-3 md:row-start-2 md:pt-[570px] md:pl-[150px]
@@ -171,17 +175,17 @@ import HeaderStyle from "../components/HeaderStyle.astro";
             <Card2
               header="Professionel balletskole 2001-2009 /"
               header2="University of Culture and Art 2009-2015"
-              description="Undervisning i ballet og kunst har givet mig stor disciplin og dedikation i at lære og udfordre mig selv, samt sans for æstetik og forståelse af visuel fortælling"
-              place="Rusland"
+              description="Klassisk balletdans på højeste niveau har givet mig disciplin, og lært mig kunsten at lære og udfordre mig selv. Dansen gav mig desuden min sans for æstetik, kreativitet og visuel fortælling. "
+              place="Saratov og Moskva"
             />
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
-    <section class="bg-beigeColor">
-      <div class="overflow-clip">
-        <section id="horisontalscrollsection" class="h-[400vw] pl-10">
+    <section class="bg-beigeColor overflow-clip">
+      <div>
+        <section id="horisontalscrollsection" class="h-[500vw] pl-10 pt-36">
           <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[10vh]">
             <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
               <h3 class="text-h3_s md:text-h3_m lg:text-h3">01 Design af udvalgte websites i samarbejde med kunder.</h3>
@@ -200,8 +204,8 @@ import HeaderStyle from "../components/HeaderStyle.astro";
 
                   <!-- Badge with text and link -->
                   <div class="absolute top-0 left-0 p-4 bg-beigeColor border-2 border-beigeColor text-black text-sm font-semibold shadow-lg">
-                    <p class="text-p_mini">Dette design er blevet</p>
-                    <p class="text-p_mini">implementeret på</p>
+                    <p class="text-p_mini">Projektets samarbejdspartner var glad for designet</p>
+                    <p class="text-p_mini">og valgte at opgradere</p>
                     <p class="text-p_mini">
                       <a href="https://www.hansulriknielsen.dk/" class="underline text-blueDarkColor" target="_blank"> virksomhedens hjemmeside </a>.
                     </p>
@@ -256,165 +260,241 @@ import HeaderStyle from "../components/HeaderStyle.astro";
                 </section>
               </figure>
             </li>
+            <!-- li test -->
+            <li class="pl-0 flex w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto">
+              <h3 class="text-h3_s md:text-h3_m lg:text-h3 mb-4">05 Tegninger på IPad</h3>
+              <p class="pt-4 text-p_s md:text-p_m lg:text-p max-w-xl">Målet har været at styrke mine færdigheder i digital tegning med fokus på lys, farver og forskellige teknikker.</p>
+
+              <!-- Carousel Wrapper -->
+              <div class="relative w-full h-full max-w-[550px] max-h-[300px] overflow-hidden rounded-lg">
+                <!-- Images -->
+                <div id="carousel-images" class="flex transition-transform duration-500 h-full">
+                  <!-- First 3 single-image slides -->
+                  <div class="w-full h-full flex-shrink-0">
+                    <img src="/sea.webp" class="w-full h-full object-cover" alt="Sea" />
+                  </div>
+                  <div class="w-full h-full flex-shrink-0">
+                    <img src="/lake_tree.webp" class="w-full h-full object-cover" alt="Lake Tree" />
+                  </div>
+                  <div class="w-full h-full flex-shrink-0">
+                    <img src="/autumn.webp" class="w-full h-full object-cover" alt="Autumn" />
+                  </div>
+
+                  <!-- Slide with two images: sunset + birds -->
+                  <div class="w-full h-full flex-shrink-0 flex">
+                    <img src="/sunset.webp" class="w-1/2 h-full object-cover" alt="Sunset" />
+                    <img src="/whales.webp" class="w-1/2 h-full object-cover" alt="Whales" />
+                  </div>
+
+                  <!-- Slide with two images: whales + apple -->
+                  <div class="w-full h-full flex-shrink-0 flex">
+                    <img src="/birds.webp" class="w-3/5 h-full object-cover" alt="Birds" />
+                    <img src="/apple.webp" class="w-2/5 h-full object-cover" alt="Apple" />
+                  </div>
+                </div>
+
+                <!-- Left Arrow -->
+                <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blueDarkColor text-white px-2 py-1 rounded-r z-10"> ◀ </button>
+
+                <!-- Right Arrow -->
+                <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blueDarkColor text-white px-2 py-1 rounded-l z-10"> ▶ </button>
+              </div>
+            </li>
+
+            <!-- li test end -->
           </ul>
         </section>
       </div>
     </section>
     <!-- ____________________-- -->
 
-    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 grid-rows-3 bg-beigeColor relative min-h-screen">
-      <!-- Background Image -->
-      <img src="sidst_5.png" alt="" class="col-start-1 col-span-full row-start-1 row-span-full object-cover w-full h-full absolute inset-0 z-0" />
-      <!-- Mirrored image (phone) -->
-      <div class="col-start-1 md:col-start-2 row-start-3 row-span-1 z-10 flex items-start justify-center md:pr-10 pt-10"><img src="phone.png" alt="Phone Image" class="transform -scale-x-100 w-24 sm:w-28 md:w-36 lg:w-auto" /></div>
-      <!-- “Let's” text -->
-      <h1 class="col-start-1 sm:col-start-2 md:col-start-3 col-span-1 md:col-span-3 row-start-2 row-span-2 text-right z-10 pr-4 sm:pr-8 md:pr-10 lg:pr-40 text-6xl md:text-6xl lg:text-[134px] leading-tight pt-32">
-        <span class="letter">L</span><span class="letter text-beigeColor">e</span><span class="letter">t</span><span class="letter">’</span><span class="letter">s</span>
-      </h1>
-      <!-- “connect” text -->
-      <h1 class="col-start-1 sm:col-start-2 md:col-start-3 md:pt-48 col-span-1 md:col-span-3 row-start-2 row-span-3 text-right pt-48 lg:pt-56 z-10 pr-4 sm:pr-8 md:pr-10 lg:pr-40 text-6xl sm:text-4xl md:text-6xl lg:text-[134px] leading-tight">
-        <span class="letter">c</span><span class="letter text-beigeColor">o</span><span class="letter">n</span><span class="letter">n</span><span class="letter">e</span><span class="letter">c</span><span class="letter">t</span>
-      </h1>
-      <!-- Links -->
-      <div class="col-start-1 sm:col-start-2 md:col-start-4 col-span-1 md:col-span-2 row-start-3 row-span-1 flex flex-col items-end justify-end z-10 space-y-3 sm:space-y-4 md:space-y-6 pr-4 sm:pr-8 md:pr-10 lg:pr-40 pb-20 pt-10">
+    <section class="grid grid-cols-5 grid-rows-5 bg-beigeColor">
+      <img src="sidst_5.png" alt="" class="col-start-1 col-span-5 row-start-1 row-span-5 mx-auto" />
+
+      <div class="col-start-2 col-span-1 row-start-4 row-span-3">
+        <img src="/phone.png" alt="" class="aspect-square w-full h-auto max-w-48 md:max-w-56 lg:max-w-xs transform -scale-x-100" />
+      </div>
+      <div class="col-start-4 col-span-2 row-start-3 row-span-3">
+        <h1 class="text-h5_s text-right sm:pr-8 md:pr-10 lg:pr-40 text-4xl md:text-8xl lg:text-8xl pr-6">
+          <span class="letter">L</span><span class="letter text-beigeColor">e</span><span class="letter">t</span><span class="letter">’</span><span class="letter">s</span>
+        </h1>
+      </div>
+      <div class="col-start-4 col-span-3 row-start-3 row-span-3 md:pt-10 lg:pt-24">
+        <h1 class="text-h5_s text-right pr-6 pt-6 md:pr-10 lg:pr-40 text-4xl md:text-8xl md:pt-4 lg:text-8xl">
+          <span class="letter">c</span><span class="letter text-beigeColor">o</span><span class="letter">n</span><span class="letter">n</span><span class="letter">e</span><span class="letter">c</span><span class="letter">t</span>
+        </h1>
+
+        <!-- <div class="col-start-1 sm:col-start-2 md:col-start-4 col-span-1 md:col-span-2 row-start-3 row-span-1 flex flex-col items-end justify-end z-10 space-y-3 sm:space-y-4 md:space-y-6 pr-4 sm:pr-8 md:pr-10 lg:pr-40 pb-20 pt-10"> -->
+      </div>
+
+      <div class="md:col-start-4 md:col-span-2 md:row-start-5 md:row-span-2 col-start-4 col-span-2 row-start-4 row-span-2z-10 pt-6 md:pt-0 md:pl-8">
         <a
           href="https://www.linkedin.com/in/elena-johansen-ab7707115/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-right text-sm sm:text-lg md:text-2xl lg:text-3xl text-blueDarkColor underline underline-offset-2 decoration-[1px] hover:text-blue-950 transition"
+          class="text-sm sm:text-lg md:text-xl lg:text-3xl text-blueDarkColor underline underline-offset-2 decoration-[1px] hover:text-blue-950 transition"
         >
           LinkedIn Profile
         </a>
-        <a href="mailto:elejohansen@gmail.com" class="text-right text-sm sm:text-lg md:text-2xl lg:text-3xl text-blueDarkColor underline underline-offset-2 decoration-[1px] hover:text-blue-950 transition"> elejohansen@gmail.com </a>
+      </div>
+      <div class="col-start-4 col-span-2 row-start-5 row-span-2 z-10 md:pt-8 lg:pt-12 md:pl-8">
+        <a href="mailto:elejohansen@gmail.com" class="text-sm sm:text-lg md:text-xl lg:text-3xl
+         text-blueDarkColor underline underline-offset-2 decoration-[1px] hover:text-blue-950 transition text-left"> elejohansen@gmail.com </a>
       </div>
     </section>
-
-    <div id="scrollToTop" class="hidden fixed bottom-5 right-5 bg-blueDarkColor text-white p-3 rounded-full shadow-lg cursor-pointer z-20">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
-      </svg>
-    </div>
   </article>
 
-  <style>
-    @keyframes scrollLineEffect {
-      0% {
-        transform: translateY(-100%);
+  <div id="scrollToTop" class="hidden fixed bottom-5 right-5 bg-blueDarkColor text-white p-3 rounded-full shadow-lg cursor-pointer z-20">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </div>
+</MainLayout>
+
+<style>
+  @keyframes scrollLineEffect {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  .line {
+    position: relative;
+    overflow: hidden;
+  }
+  .scroll-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 228, 224, 1);
+    animation: scrollLineEffect 3s linear infinite;
+  }
+
+  .letter {
+    will-change: transform;
+    cursor: default;
+
+    display: inline-block;
+    transition: transform 0.2s ease;
+    letter-spacing: 0;
+  }
+
+  .letter:hover {
+    transform: scaleX(0.8) scaleY(1.2);
+  }
+
+  #horisontalliste > li {
+    width: 100vw; /* Same width for all items */
+    flex: 0 0 auto; /* Prevents flex shrinking/growing */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    height: 500px; /* Set a fixed height */
+  }
+
+  /* Set consistent video sizes */
+  #horisontalliste video {
+    width: 600px; /* Uniform width */
+    height: 300px; /* Uniform height */
+    object-fit: cover; /* Ensures proper scaling */
+  }
+
+  #img_size img {
+    width: 600px; /* Match video width */
+    height: 300px; /* Match video height */
+    object-fit: cover; /* Ensures proper scaling */
+  }
+
+  /* Adjust figure to align videos properly */
+  figure {
+    display: flex;
+    gap: 1rem; /* Space between videos */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container {
+    transition:
+      transform 0.3s ease,
+      outline 0.3s ease; /* Smooth scaling and outline transition */
+  }
+
+  .video-container:hover {
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8); /* Glowing effect */
+    transform: scale(1.05); /* Slightly increases size */
+    cursor: pointer; /* Indicates interactivity */
+  }
+
+  /* Picture hover effect */
+  .picture-container:hover {
+    outline: none; /* No outline for images */
+    cursor: default; /* Default cursor for static pictures */
+  }
+</style>
+<script>
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+  scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+  scroll(
+    animate("#horisontalliste", {
+      transform: ["none", "translateX(-400vw)"],
+    }),
+    { target: document.querySelector("#horisontalscrollsection") }
+  );
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopButton = document.getElementById("scrollToTop");
+
+    // Show/hide the button on scroll
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollToTopButton.classList.remove("hidden");
+      } else {
+        scrollToTopButton.classList.add("hidden");
       }
-      50% {
-        transform: translateY(0);
-      }
-      100% {
-        transform: translateY(100%);
-      }
-    }
+    });
 
-    .line {
-      position: relative;
-      overflow: hidden;
-    }
-    .scroll-effect {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(228, 228, 224, 1);
-      animation: scrollLineEffect 3s linear infinite;
-    }
-
-    .letter {
-      will-change: transform;
-      cursor: default;
-
-      display: inline-block;
-      transition: transform 0.2s ease;
-      letter-spacing: 0;
-    }
-
-    .letter:hover {
-      transform: scaleX(0.8) scaleY(1.2);
-    }
-
-    #horisontalliste > li {
-      width: 100vw; /* Same width for all items */
-      flex: 0 0 auto; /* Prevents flex shrinking/growing */
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      justify-content: space-between;
-      height: 500px; /* Set a fixed height */
-    }
-
-    /* Set consistent video sizes */
-    #horisontalliste video {
-      width: 600px; /* Uniform width */
-      height: 300px; /* Uniform height */
-      object-fit: cover; /* Ensures proper scaling */
-    }
-
-    #img_size img {
-      width: 600px; /* Match video width */
-      height: 300px; /* Match video height */
-      object-fit: cover; /* Ensures proper scaling */
-    }
-
-    /* Adjust figure to align videos properly */
-    figure {
-      display: flex;
-      gap: 1rem; /* Space between videos */
-      justify-content: center;
-      align-items: center;
-    }
-
-    .video-container {
-      transition:
-        transform 0.3s ease,
-        outline 0.3s ease; /* Smooth scaling and outline transition */
-    }
-
-    .video-container:hover {
-      box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8); /* Glowing effect */
-      transform: scale(1.05); /* Slightly increases size */
-      cursor: pointer; /* Indicates interactivity */
-    }
-
-    /* Picture hover effect */
-    .picture-container:hover {
-      outline: none; /* No outline for images */
-      cursor: default; /* Default cursor for static pictures */
-    }
-  </style>
-  <script>
-    import { animate, stagger, inView, scroll, timeline } from "motion";
-    scroll(animate(".progress-bar", { scaleX: [0, 1] }));
-    scroll(
-      animate("#horisontalliste", {
-        transform: ["none", "translateX(-400vw)"],
-      }),
-      { target: document.querySelector("#horisontalscrollsection") }
-    );
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const scrollToTopButton = document.getElementById("scrollToTop");
-
-      // Show/hide the button on scroll
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-          scrollToTopButton.classList.remove("hidden");
-        } else {
-          scrollToTopButton.classList.add("hidden");
-        }
-      });
-
-      // Scroll to top when the button is clicked
-      scrollToTopButton.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
+    // Scroll to top when the button is clicked
+    scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
     });
-  </script>
-</MainLayout>
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const imagesContainer = document.getElementById("carousel-images");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    const totalSlides = imagesContainer.children.length;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      imagesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    });
+  });
+</script>
